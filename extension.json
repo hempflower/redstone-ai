@@ -1,0 +1,67 @@
+{
+	"name": "pro-api-sdk",
+	"uuid": "0d0e09baa8014f59b62a4760cf006a3c",
+	"displayName": "红石 AI 助手",
+	"description": "红石 AI 助手，AI 驱动的EDA助手",
+	"version": "0.0.1",
+	"publisher": "evanxiao <1993996310@qq.com>",
+	"engines": {
+		"eda": "^2.3.0"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "extension-store",
+		"url": "https://github.com/hempflower/eda-redstone-ai"
+	},
+	"categories": "Other",
+	"keywords": ["SDK"],
+	"images": {
+		"logo": "./images/logo.png"
+	},
+	"homepage": "https://github.com/hempflower/eda-redstone-ai#readme",
+	"bugs": "https://github.com/hempflower/eda-redstone-ai/issues",
+	"activationEvents": {},
+	"entry": "./dist/index",
+	"dependentExtensions": {},
+	"headerMenus": {
+		"home": [
+			{
+				"id": "API SDK",
+				"title": "API SDK",
+				"menuItems": [
+					{
+						"id": "About",
+						"title": "About...",
+						"registerFn": "about"
+					}
+				]
+			}
+		],
+		"sch": [
+			{
+				"id": "API SDK",
+				"title": "API SDK",
+				"menuItems": [
+					{
+						"id": "About",
+						"title": "About...",
+						"registerFn": "about"
+					}
+				]
+			}
+		],
+		"pcb": [
+			{
+				"id": "API SDK",
+				"title": "API SDK",
+				"menuItems": [
+					{
+						"id": "About",
+						"title": "About...",
+						"registerFn": "about"
+					}
+				]
+			}
+		]
+	}
+}
