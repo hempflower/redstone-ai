@@ -13,7 +13,9 @@
 		"prettier:all": "prettier --write .",
 		"eslint:all": "eslint --ext .ts --fix .",
 		"fix": "yarn prettier:all && yarn eslint:all",
-		"build": "yarn compile && ts-node ./build/packaged.ts"
+		"build": "yarn build:ui && yarn compile && ts-node ./build/packaged.ts",
+		"build:ui": "vite build",
+		"dev:ui": "vite"
 	},
 	"devDependencies": {
 		"@jlceda/pro-api-types": "^0.1.175",
@@ -22,6 +24,8 @@
 		"@types/fs-extra": "^11.0.4",
 		"@typescript-eslint/eslint-plugin": "^7.18.0",
 		"@typescript-eslint/parser": "^7.18.0",
+		"@vitejs/plugin-vue": "^6.0.1",
+		"@vue/tsconfig": "^0.8.1",
 		"esbuild": "^0.24.2",
 		"eslint": "^8.57.0",
 		"eslint-config-alloy": "^5.1.2",
@@ -34,7 +38,9 @@
 		"prettier": "^3.4.2",
 		"rimraf": "^6.0.1",
 		"ts-node": "^10.9.2",
-		"typescript": "^5.7.3"
+		"typescript": "^5.7.3",
+		"vite": "^7.1.7",
+		"vite-plugin-singlefile": "^2.3.0"
 	},
 	"lint-staged": {
 		"*.ts": "eslint --cache --fix",
@@ -42,5 +48,10 @@
 	},
 	"engines": {
 		"node": ">=20.5.0"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.1.13",
+		"tailwindcss": "^4.1.13",
+		"vue": "^3.5.21"
 	}
 }

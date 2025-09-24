@@ -24,41 +24,15 @@
 	"entry": "./dist/index",
 	"dependentExtensions": {},
 	"headerMenus": {
-		"home": [
-			{
-				"id": "API SDK",
-				"title": "API SDK",
-				"menuItems": [
-					{
-						"id": "About",
-						"title": "About...",
-						"registerFn": "about"
-					}
-				]
-			}
-		],
 		"sch": [
 			{
-				"id": "API SDK",
-				"title": "API SDK",
+				"id": "menu.redstone-ai",
+				"title": "红石 AI",
 				"menuItems": [
 					{
-						"id": "About",
-						"title": "About...",
-						"registerFn": "about"
-					}
-				]
-			}
-		],
-		"pcb": [
-			{
-				"id": "API SDK",
-				"title": "API SDK",
-				"menuItems": [
-					{
-						"id": "About",
-						"title": "About...",
-						"registerFn": "about"
+						"id": "menu.redstone-ai.chat",
+						"title": "打开聊天",
+						"registerFn": "openChatPanel"
 					}
 				]
 			}

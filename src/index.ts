@@ -21,3 +21,7 @@ export function about(): void {
 		eda.sys_I18n.text('About'),
 	);
 }
+
+export const openChatPanel = () => {
+	eda.sys_IFrame.openIFrame('/iframe/chat/index.html');
+};
